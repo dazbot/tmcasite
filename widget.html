@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Widget</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/widget.css">
+        <script src="/js/jquery-1.10.2.min.js"></script>
+        <script src="/js/jquery.easy-ticker.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/ahb5ikq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        
+        <a href="http://www.thatsmelbourne.com.au">
+            <div class="header">
+                <div class="floatLeft middleContainer">
+                    <div class="middle">
+                        <h1><span class="bold">WHAT'S</span> ON <span class="bold">MELBOURNE</span></h1>
+                    </div>
+                </div>                    
+                <img src="/images/com-logo.jpg" alt="City of Melbourne logo">
+            </div>
+        </a>
+        
+        <div class="scrollButton up"></div>
+        
+        <div class="ticker">
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+                <li>Event 4</li>
+                <li>Event 5</li>
+                <li>Event 6</li>
+                <li>Event 7</li>
+                <li>Event 8</li>
+                <li>Event 9</li>
+                <li>Event 10b</li>
+            </ul>
+        </div>
+
+        <div class="scrollButton down"></div>
+
+        <script>
+            $(document).ready(function() {
+                //window.alert($(window).width() + ' x ' + $(window).height());
+                $('.ticker').easyTicker({
+                    controls: {
+                        up: '.up',
+                        down: '.down'
+                    }
+                });
+                $('.ticker').height($(window).height() - $('.header').height() - $('.up').height() - $('.down').height() - $('.ticker').css('border-top-width').replace('px', '') - $('.ticker').css('border-bottom-width').replace('px', ''));
+            });
+        </script>
+    </body>
+</html>
