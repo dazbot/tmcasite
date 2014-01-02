@@ -30,32 +30,115 @@ and open the template in the editor.
         
         <div class="scrollButton up"></div>
         
-        <div class="ticker">
-            <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <li>Event 3</li>
-                <li>Event 4</li>
-                <li>Event 5</li>
-                <li>Event 6</li>
-                <li>Event 7</li>
-                <li>Event 8</li>
-                <li>Event 9</li>
-                <li>Event 10b</li>
-            </ul>
+        <div class="tickerContainer">
+            <div class="ticker">
+                <ul>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li class="result">
+                        <a href="http://www.thatsmelbourne.com.au">
+                            <img class="thumbnail" src="http://www.thatsmelbourne.com.au/System/images/global/WhatsOn-generic-medium.jpg" alt="Top Shelf Boutique Drinks Festival">
+                            <div class="details">
+                                <h2>Top Shelf Boutique Drinks Festival</h2>
+                                <div class="subTitle">9 Feb 2014, Royal Exhibition Building</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="scrollButton down"></div>
+        
+        <div class="searchContainer">
+            <div class="roundedSearchBox">
+                <div class="searchBoxWrapper">
+                    <input class="searchBox" type="text" placeholder="SEARCH">
+                </div>
+                <button class="searchButton" type="submit"><img src="/images/widget-search.png"></button>
+            </div>
+        </div>
+        
+        <script src="/js/widget.js"></script>
 
-            $(document).ready(function() {
-                //window.alert($(window).width() + ' x ' + $(window).height());
-                $('.ticker').easyTicker({
-                    controls: {
-                        up: '.up',
-                        down: '.down'
-                    }
-                });
-                $('.ticker').height($(window).height() - $('.header').height() - $('.up').height() - $('.down').height() - $('.ticker').css('border-top-width').replace('px', '') - $('.ticker').css('border-bottom-width').replace('px', ''));
-            });
     </body>
 </html>
