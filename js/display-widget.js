@@ -7,5 +7,5 @@
 function displayWOWidget(parameters)
 {
     var widgetDiv = document.getElementById(parameters['target']);
-    widgetDiv.innerHTML = '<iframe src="http://tmcasite/widget.html" width="' + parameters['width'] + '" height="' + parameters['height'] + '" seamless frameborder="0" scrolling="no"></iframe>';
+    widgetDiv.innerHTML = '<iframe src="http://tmcasite/widget.html?theme=dark" width="' + parameters['width'] + '" height="' + parameters['height'] + '" seamless frameborder="0" scrolling="no"></iframe>';
 }
